@@ -117,13 +117,15 @@ def LeNet_Dropout(x, dropout):
     logits = tf.matmul(fc1, fc3_W) + fc3_b
     
     return logits
-    ```
+```
 Max. accuracy 0.976 at epoch 106.  
-<img src="img/Final.png" width = "800"/>
+<img src="img/Final.png" width = "800"/>  
 
 ## 3. Model Test on New Images
-<img src="img/Test_Img.JPG" width = "800"/>
+<img src="img/Test_Img.JPG" width = "800"/>  
+
 ### Prediction
-<img src="img/Test_Prediction.JPG" width = "800"/>
+<img src="img/Test_Prediction.JPG" width = "800"/>  
+
 ### Output Top 5 Softmax Probabilities For Each Image  
 <img src="img/Top_5.JPG" width = "800"/>
