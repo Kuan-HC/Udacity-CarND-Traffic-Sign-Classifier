@@ -44,17 +44,17 @@ rate = 0.001
 drop_out = 0.5 (LeNet doesnn't use dropout)
 ```
 #### Baseline: LeNet
-Maxi accuracy is 0.91.
+Maxi accuracy is 0.91.  
 <img src="img/Lenet_Acc.png" width = "400"/>
 
 #### Second Model  
-Comparing with Lenet, this model removeed Max Pooling to keep the details. 
+Comparing with Lenet, this model removeed Max Pooling to keep the details.  
 Also , this model has 3 convolution layers. As shown in the figure below, max accuracy rised to 0.973.
-<img src="img/Model_2.png" width = "400"/>
+<img src="img/Model_2_Arch.JPG" width = "300"/> <img src="img/Model_2.png" width = "400"/>
 
 #### Third Model 6 Layer with Dopr and Maxpooling
-Max. Accuracy: 0.978. Comparing to model 2, one extra layer shows no significant accuracy improvement
-<img src="img/Model_3.png" width = "400"/>
+Max. Accuracy: 0.978. Comparing to model 2, one extra layer shows no significant accuracy improvement  
+<img src="img/Model_3_Arch.JPG" width = "300"/> <img src="img/Model_3.png" width = "400"/>
 
 #### Final Model  
 Model 2 is chosen as final model.. Model has 3 convolution layers
@@ -117,7 +117,7 @@ def LeNet_Dropout(x, dropout):
     logits = tf.matmul(fc1, fc3_W) + fc3_b
     
     return logits
-    ```
+```
 Max. accuracy 0.976 at epoch 106.  
 <img src="img/Final.png" width = "800"/>
 
